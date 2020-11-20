@@ -1,0 +1,140 @@
+body {
+    font-family: arial;
+    font-size: 13px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 270px;
+    margin-top: 65px;
+}
+
+#search-bar {
+    border-radius: 25px;
+    width: 535px;
+    height: 42px;
+    border: 1px solid rgba(128, 128, 128, 0.26);
+    margin: 25px 0px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png");
+    background-size: 15px;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    padding-left: 45px;
+    outline: none;
+}
+
+#search-flex {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    margin: 4px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(0 0 0 / 3%);
+    color: #3c4043;
+    font-size: 14px;
+}
+
+input:hover {
+    box-shadow: 1px 1px 4px -1px gray;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    margin: 7px 9px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(53, 53, 53);
+}
+
+#apps-symbol {
+    width: 27px;
+    margin-left: 3px;
+}
+
+#user-symbol {
+    background-color: rgb(24, 128, 114);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    line-height: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.left-nav {
+    padding-left: 15px;
+}
+
+.right-nav {
+    padding-right: 10px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    background-color: #8080801a;
+}
+
+@media (min-width: 1200px) {
+    #footer .right-nav {
+        padding-right: 15px;
+    }
+    
+    #footer .left-nav {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #footer {
+        justify-content: space-evenly;
+    }
+}
+
+
+#header .left-nav {
+    font-size: 14px;
+}
+
+#footer a {
+    color: gray;
+    font-size: 14px;
+}
+
+#footer li {
+    margin: 8px 15px;
+}
